@@ -1,4 +1,43 @@
 .App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.add-task {
+  height: 30vh;
+  background-color: dodgerblue;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: 100%;
+  padding-top: 50px;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.task {
+  width: 500px;
+  height: 50px;
+  display: flex;
+  margin: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.task button {
+  margin-left: 20px;
+  height: 20px;
+  width: 25px;
   text-align: center;
 }
 
@@ -32,12 +71,13 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.todo-list{
+.todo-list {
   display: flex;
   flex-direction: row;
 }
